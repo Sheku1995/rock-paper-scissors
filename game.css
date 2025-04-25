@@ -1,1 +1,155 @@
+body{
+  background-color: #0e0d1f;
+  color: white;
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 40px;
+}
+#game-container{
+  background-color: burlywood;
+  color: black;
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+details{
+  text-align: center;
+  font-size: 18px;
+}
+summary{
+  font-size: 21px;
+}
+#start-game-btn{
+  display: block;
+  margin: auto;
+  font-size: 17px;
+  background-color: #5c5470;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hidden{
+  display: none;
+}
+#buttons-container{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.btns{
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #5c5470;
+  color: white;
+  cursor: pointer;
+}
+#screen{
+  background-color: #719192;
+  width: 90%;
+  font-size: 19px;
+  border-radius: 5px;
+  margin: 15px auto;
+  padding: 5px;
+  text-align: center;
+}
+#scores-container{
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+}
+.scores{
+  font-weight: bold;
+  font-size: 21px;
+}
+#restart-game-btn{
+  display: none;
+}
+.win-icon{
+  animation-name: animate-icons;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes animate-icons{
+  from{transform: scale(0.9)}
+  to{transform: scale(2)}
+}
+h4{
+  text-align: center;
+  font-size: 18px;
+}
+footer{
+  text-align: center;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1024px){
+  #game-container{
+    width: 55%;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  .btns{
+    font-size: 18px;
+    padding: 5px;
+  }
+  #screen{
+    font-size: 19px;
+  }
+  #scores-container{
+    font-size: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 768px){
+  #game-container{
+    width: 80%;
+  }
+  h1{
+    font-size: 2.2rem;
+  }
+  .btns{
+    font-size: 17px;
+    padding: 4px;
+  }
+  #screen{
+    font-size: 18px;
+  }
+  #scores-container{
+    font-size: 19px;
+  }
+  
+}
+@media screen and (max-width: 480px){
+  #game-container{
+    width: 85%;
+  }
+  h1{
+    font-size: 2rem;
+    margin-top: 90px;
+  }
+  .btns{
+    font-size: 16px;
+    padding: 3px;
+  }
+  #screen{
+    font-size: 17px;
+  }
+  #scores-container{
+    font-size: 18px;
+  }
+  
+}
+
 
