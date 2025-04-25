@@ -2,6 +2,7 @@ const rockBtn = document.getElementById("Rock");
 const paperBtn = document.getElementById("Paper");
 const scissorsBtn = document.getElementById("Scissors");
 const restartGameBtn = document.getElementById("restart-game-btn");
+const startGameBtn = document.getElementById("start-game-btn");
 
 rockBtn.addEventListener("click", ()=> playGame("Rock"));
 paperBtn.addEventListener("click", ()=> playGame("Paper"));
@@ -76,7 +77,7 @@ function playGame(playerChoice){
           scissorsBtn.style.display = "none";
         }
   }
-  
+  screen.style.display = "block";
 }
 
 function restartGame(){
@@ -86,6 +87,7 @@ function restartGame(){
   playerScore.textContent = "";
   computerScore.textContent = "";
   screen.innerHTML = "";
+  screen.style.display = "none";
   levelScreen.innerHTML = "";
   
   restartGameBtn.style.display = "none";
@@ -93,6 +95,7 @@ function restartGame(){
   paperBtn.style.display = "block";
   scissorsBtn.style.display = "block";
 }
+
 
 const introSection = document.getElementById("intro-section");
 const gameSection = document.getElementById("game-section");

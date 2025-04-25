@@ -59,6 +59,7 @@ summary{
   margin: 15px auto;
   padding: 5px;
   text-align: center;
+  display: none;
 }
 #scores-container{
   display: flex;
@@ -151,5 +152,3 @@ footer{
   }
   
 }
-
-
